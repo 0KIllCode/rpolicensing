@@ -1,0 +1,97 @@
+<template>
+    <lightning-tabset class="tabset-1">
+        <lightning-tab label="Activities" id="tab-activities"></lightning-tab>
+        <lightning-tab label="Hiring/Recruiting" title="2nd tab extended title" id="tab-hiring-recruiting">
+        </lightning-tab>
+        <lightning-tab label="Training" id="tab-training"></lightning-tab>
+        <lightning-tab label="Licensing" id="tab-licensing">
+            <div class="slds-card slds-card_boundary">
+                <div class="slds-p-around_small">
+                    <ul class="slds-m-top_small slds-list_vertical-space-medium">
+                        <li class="slds-item">
+                            <div class="slds-media slds-media_center">
+                                <div class="slds-media__figure">
+                                    <lightning-progress-ring value="10" size="large" variant="base-autocomplete">
+                                    </lightning-progress-ring>
+                                </div>
+                                <div class="slds-media__body"><a target="_blank" class="slds-text-link" href="">Branch
+                                        Licensing Agreement</a></div>
+                                <div class="slds-media__figure slds-media__figure_reverse"></div>
+                            </div>
+                        </li>
+                        <lightning-input type="checkbox" label="Sent licensing agreement" name="input1" class="input-1">
+                        </lightning-input>
+                        <lightning-input type="checkbox" label="Received licensing agreement" name="input1"
+                            class="input-1"></lightning-input>
+                        <li class="slds-item">
+                            <div class="slds-media slds-media_center">
+                                <div class="slds-media__figure">
+                                    <lightning-progress-ring value="10" size="large" variant="base-autocomplete">
+                                    </lightning-progress-ring>
+                                </div>
+                                <div class="slds-media__body"><a target="_blank" class="slds-text-link" href="">Banker
+                                        Set Up</a></div>
+                                <div class="slds-media__figure slds-media__figure_reverse"></div>
+                            </div>
+                        </li>
+                        <lightning-input type="checkbox" label="MU4 session scheduled" name="input1" class="input-1">
+                        </lightning-input>
+                        <lightning-input type="checkbox" name="input1" class="input-1" label="Updated">
+                        </lightning-input>
+                        <li class="slds-item">
+                            <div class="slds-media slds-media_center">
+                                <div class="slds-media__figure">
+                                    <lightning-progress-ring value="0" size="large" variant="base-autocomplete">
+                                    </lightning-progress-ring>
+                                </div>
+                                <div class="slds-media__body"><a target="_blank" class="slds-text-link"
+                                        href="">Individual License Application (MU4)</a></div>
+                                <div class="slds-media__figure slds-media__figure_reverse"></div>
+                            </div>
+                        </li>
+                        <lightning-input type="checkbox" label="Initial MU4 submitted to state" name="input1"
+                            class="input-1"></lightning-input>
+                        <lightning-input type="checkbox" label="Updated MU4 submitted to state" name="input1"
+                            class="input-1"></lightning-input>
+                        <lightning-input type="checkbox" label="Sponsorship requested" name="input1" class="input-1">
+                        </lightning-input>
+                        <lightning-input type="checkbox" label="Individual license approved" name="input1"
+                            class="input-1"></lightning-input>
+                        <lightning-input type="checkbox" label="Individual license deficiency" name="input1"
+                            class="input-1"></lightning-input>
+                        <li class="slds-item">
+                            <div class="slds-media slds-media_center">
+                                <div class="slds-media__figure">
+                                    <lightning-progress-ring value="0" size="large" variant="base-autocomplete">
+                                    </lightning-progress-ring>
+                                </div>
+                                <div class="slds-media__body"><a target="_blank" class="slds-text-link" href="">Branch
+                                        License Application (MU3)</a></div>
+                                <div class="slds-media__figure slds-media__figure_reverse"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <lightning-input type="checkbox" label="MU3 App submitted to state" name="input1" class="input-1">
+                    </lightning-input>
+                    <lightning-input type="checkbox" label="Branch license approved" name="input1" class="input-1">
+                    </lightning-input>
+                    <lightning-input type="checkbox" label="Branch license deficiency" name="input1" class="input-1">
+                    </lightning-input>
+                </div>
+                <div class="slds-theme_shade slds-border_top">
+                    <div class="slds-p-around_small">
+                        <lightning-layout class="slds-p-bottom_x-small" horizontal-align="spread">
+                            <lightning-layout-item>
+                                <div style="font-size: 13px;">Licensing Progress</div>
+                            </lightning-layout-item>
+                            <lightning-layout-item>
+                                <div style="font-size: 0.8125rem;"><b>25%</b></div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <lightning-progress-bar variant="circular" value="25" size="medium"></lightning-progress-bar>
+                    </div>
+                </div>
+            </div>
+        </lightning-tab>
+    </lightning-tabset>
+</template>
